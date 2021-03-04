@@ -270,10 +270,31 @@
   font-size: 0.935rem;
   line-height: 1.6rem;
   margin: 0 1rem;
-  color: dimgray;
+  color: #8c8c8c;
+}
+
+.products {
+  text-align: center;
+}
+
+.products__header {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 body {
   font-size: 15px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  border: 1px solid black;
+  width: 150px;
 }
 /*# sourceMappingURL=main.css.map */
