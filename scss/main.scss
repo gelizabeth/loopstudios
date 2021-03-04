@@ -17,4 +17,9 @@ body {
     font-weight: 300;
     border: 1px solid $primary-color;
     width: 159px;
+    @include transition-ease;
+    &:hover{
+        background: $primary-color;
+        color: $white;
+    }
 }
