@@ -1,16 +1,80 @@
-.products{
+.products {
     text-align: center;
-    &__header{
+
+    &__header {
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 100;
         font-size: 2rem;
-    }
-    &__container{
 
     }
-    &__item{
+
+    &__container {
+        padding: 1.5rem;
 
     }
-    
+    &__button{
+        margin: 0.5rem auto;
+    }
+    &__item {
+        height: 120px;
+        width: 100%;
+        margin: 1.5rem auto;
+        position: relative;
+
+        .product__header {
+            position: absolute;
+            width: 110px;
+            text-align: left;
+            bottom: 1.4rem;
+            left: 1.3rem;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 100;
+            color: $white;
+            font-size: 1.5rem;
+        }
+
+        &:nth-of-type(1) {
+            background: url('../img/mobile/image-deep-earth.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(2) {
+            background: url('../img/mobile/image-night-arcade.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(3) {
+            background: url('../img/mobile/image-soccer-team.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(4) {
+            background: url('../img/mobile/image-grid.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(5) {
+            background: url('../img/mobile/image-from-above.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(6) {
+            background: url('../img/mobile/image-pocket-borealis.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(7) {
+            background: url('../img/mobile/image-curiosity.jpg');
+            background-size: cover;
+        }
+
+        &:nth-of-type(8) {
+            background: url('../img/mobile/image-fisheye.jpg');
+            background-size: cover;
+            margin-bottom: 0;
+        }
+    }
+
 }
