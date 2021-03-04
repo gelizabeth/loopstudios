@@ -312,7 +312,7 @@
   color: #8c8c8c;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .about {
     padding: 10rem 10.25rem;
     display: -webkit-box;
@@ -342,7 +342,7 @@
     width: 731px;
     height: 499px;
     background: url("../img/desktop/image-interactive.jpg") no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
@@ -364,6 +364,14 @@
 
 .products__button {
   margin: 0.5rem auto;
+}
+
+.products__button_mobile {
+  display: unset;
+}
+
+.products__button_desktop {
+  display: none;
 }
 
 .products__item {
@@ -425,6 +433,93 @@
   background: url("../img/mobile/image-fisheye.jpg");
   background-size: cover;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .products {
+    padding: 1.5rem 10.1rem 8.5rem 10.25rem;
+  }
+  .products__header {
+    text-align: left;
+    font-size: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .products__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 0;
+    padding: 3.5rem 0;
+  }
+  .products__button {
+    cursor: pointer;
+  }
+  .products__button_mobile {
+    display: none;
+  }
+  .products__button_desktop {
+    display: unset;
+    margin: 0;
+    text-align: center;
+  }
+  .products__item {
+    height: 450px;
+    margin: 1.5rem auto 0;
+  }
+  .products__item .product__header {
+    width: 164px;
+    font-size: 2rem;
+    bottom: 2rem;
+    left: 2.6rem;
+  }
+  .products__item:nth-of-type(1) {
+    background: url("../img/desktop/image-deep-earth.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(2) {
+    background: url("../img/desktop/image-night-arcade.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(3) {
+    background: url("../img/desktop/image-soccer-team.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(4) {
+    background: url("../img/desktop/image-grid.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(5) {
+    background: url("../img/desktop/image-from-above.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(6) {
+    background: url("../img/desktop/image-pocket-borealis.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(7) {
+    background: url("../img/desktop/image-curiosity.jpg");
+    background-size: cover;
+  }
+  .products__item:nth-of-type(8) {
+    background: url("../img/desktop/image-fisheye.jpg");
+    background-size: cover;
+    margin-bottom: 0;
+  }
 }
 
 .footer {

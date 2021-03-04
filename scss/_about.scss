@@ -1,38 +1,43 @@
-.about{
-    
+.about {
+
     width: 100vw;
     padding: 6rem 1.5rem;
     text-align: center;
+
     // display: unset;
-    &__img{
+    &__img {
         width: 100%;
         height: 222px;
         background: url('../img/mobile/image-interactive.jpg') no-repeat;
         background-size: cover;
     }
-    &__header{
+
+    &__header {
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 100;
         font-size: 2rem;
         padding: 3rem 0 1.2rem;
-       
+
     }
-    &__content{
+
+    &__content {
         font-family: 'Alata', sans-serif;
         font-size: 0.935rem;
         line-height: 1.6rem;
         margin: 0 1rem;
         color: $gray;
-        
+
     }
 }
-@include media-md{
-    .about{
+
+@include media-lg {
+    .about {
         padding: 10rem 10.25rem;
         display: flex;
         position: relative;
-        &__container{
+
+        &__container {
             background: $white;
             position: absolute;
             right: 10.25rem;
@@ -42,20 +47,23 @@
             padding: 6rem 0 0 6rem;
             text-align: left;
         }
-        &__header{
+
+        &__header {
             padding: 0;
             font-size: 3rem;
         }
-        &__content{
+
+        &__content {
             padding: 0;
             margin: 1.6rem 0 0;
         }
-        &__img{
+
+        &__img {
             width: 731px;
-        height: 499px;
-        background: url('../img/desktop/image-interactive.jpg') no-repeat;
-        background-size: cover;
+            height: 499px;
+            background: url('../img/desktop/image-interactive.jpg') no-repeat;
+            background-size: contain;
         }
-        
+
     }
 }
