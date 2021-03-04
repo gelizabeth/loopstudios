@@ -19,3 +19,21 @@
         letter-spacing: 0.08rem;
     }
 }
+@include media-md{
+    .home{
+        padding: 14rem 39rem 9rem 10.25rem;
+        justify-content: flex-start;
+        h1{
+            padding: unset;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-left: 2.5rem;
+            padding-top: 0.5rem;
+            width: 100%;
+            height: 100%;
+            font-size: 4.4rem;
+        }
+    }
+}

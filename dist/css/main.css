@@ -177,6 +177,11 @@
   .nav {
     visibility: visible;
   }
+  .nav__logo {
+    top: 4rem;
+    left: 10.25rem;
+    width: 200px;
+  }
   .nav .menu-nav {
     display: block;
     -webkit-transform: translateY(0);
@@ -184,16 +189,18 @@
     height: 100%;
     background: transparent;
     text-align: right;
+    padding-right: 8.5rem;
   }
   .nav .menu-nav__item {
     display: inline;
-    padding-right: 1.5rem;
+    padding-right: 1.75rem;
   }
   .nav .menu-nav__link {
-    padding: 2rem 0 1rem 0;
-    font-size: 1.5rem;
+    padding: 4.6rem 0 1rem 0;
+    font-size: 1rem;
     color: #fff;
     position: relative;
+    text-transform: capitalize;
   }
   .nav .menu-nav__link::after {
     content: '';
@@ -242,6 +249,36 @@
   border: 2px solid #fff;
   padding: 1.33rem;
   letter-spacing: 0.08rem;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    padding: 14rem 39rem 9rem 10.25rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .home h1 {
+    padding: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 2.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 4.4rem;
+  }
 }
 
 .about {
