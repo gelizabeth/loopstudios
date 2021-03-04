@@ -62,3 +62,33 @@
         }
     }
 }
+@include media-lg{
+    .footer{
+        padding: 2.5rem 10.25rem;
+        // flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        &__nav{
+            display: flex;
+            flex-direction: row;
+            margin: unset;
+            grid-column: 1;
+        }
+        &__item{
+            margin: 0 1rem 0 0;
+        }
+        .copyright{
+            grid-column: 2;
+            grid-row: 2;
+            text-align: right;
+        }
+        &__social{
+            grid-row: 1;
+            grid-column: 2;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0;
+        }
+    }
+}

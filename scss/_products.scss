@@ -84,7 +84,7 @@
 }
 @include media-lg{
 .products{
-    padding: 1.5rem 10.1rem 8.5rem 10.25rem;
+    padding: 1.5rem 10.1rem 7.5rem 10.25rem;
     
     &__header {
         text-align: left;
@@ -115,7 +115,7 @@
     }
     &__item {
         height: 450px;
-        margin: 1.5rem auto 0;
+        margin: 1.5rem auto 0.45rem;
         .product__header {
            width: 164px;
            font-size: 2rem;
