@@ -170,7 +170,7 @@
           transition-delay: 0.55s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -253,10 +253,12 @@
 
 @media screen and (min-width: 768px) {
   .home {
-    padding: 14rem 39rem 9rem 10.25rem;
+    padding: 14rem 8.5rem 9rem 10.25rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    background: url("../img/desktop/image-hero.jpg");
+    background-size: cover;
   }
   .home h1 {
     padding: unset;
@@ -275,7 +277,7 @@
             justify-content: center;
     padding-left: 2.5rem;
     padding-top: 0.5rem;
-    width: 100%;
+    max-width: 650px;
     height: 100%;
     font-size: 4.4rem;
   }
@@ -308,6 +310,40 @@
   line-height: 1.6rem;
   margin: 0 1rem;
   color: #8c8c8c;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 10rem 10.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .about__container {
+    background: #fff;
+    position: absolute;
+    right: 10.25rem;
+    bottom: 9.9rem;
+    width: 542px;
+    height: 317px;
+    padding: 6rem 0 0 6rem;
+    text-align: left;
+  }
+  .about__header {
+    padding: 0;
+    font-size: 3rem;
+  }
+  .about__content {
+    padding: 0;
+    margin: 1.6rem 0 0;
+  }
+  .about__img {
+    width: 731px;
+    height: 499px;
+    background: url("../img/desktop/image-interactive.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 .products {

@@ -21,8 +21,10 @@
 }
 @include media-md{
     .home{
-        padding: 14rem 39rem 9rem 10.25rem;
+        padding: 14rem 8.5rem 9rem 10.25rem;
         justify-content: flex-start;
+        background: url('../img/desktop/image-hero.jpg');
+        background-size: cover;
         h1{
             padding: unset;
             display: flex;
@@ -31,7 +33,7 @@
             justify-content: center;
             padding-left: 2.5rem;
             padding-top: 0.5rem;
-            width: 100%;
+            max-width: 650px;
             height: 100%;
             font-size: 4.4rem;
         }

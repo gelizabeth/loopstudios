@@ -114,7 +114,7 @@
         transition-delay: ($i*0.1s) + 0.15s;
     }
 }
-@include media-md{
+@include media-lg{
     .menu-btn{
         visibility: hidden;
     }
