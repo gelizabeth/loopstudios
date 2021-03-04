@@ -1,4 +1,4 @@
-@import './config', './menu', './home', './about', './products';
+@import './config', './menu', './home', './about', './products', './footer';
 
 
 //Feel free to change everything below this comment
@@ -13,8 +13,8 @@ body {
     padding: 0.6rem;
     font-size: 0.89rem;
     letter-spacing: 0.3rem;
-    color: black;
+    color: $primary-color;
     font-weight: 300;
-    border: 1px solid black;
+    border: 1px solid $primary-color;
     width: 159px;
 }

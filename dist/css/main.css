@@ -275,6 +275,7 @@
 
 .products {
   text-align: center;
+  padding-bottom: 5.5rem;
 }
 
 .products__header {
@@ -351,6 +352,80 @@
   background: url("../img/mobile/image-fisheye.jpg");
   background-size: cover;
   margin-bottom: 0;
+}
+
+.footer {
+  padding: 3.5rem 1.5rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer .copyright {
+  color: dimgray;
+  font-family: 'Alata', sans-serif;
+}
+
+.footer__logo {
+  background: url("../img/logo.svg") no-repeat;
+  background-size: contain;
+  height: 32px;
+  width: 144px;
+}
+
+.footer__nav {
+  margin: 0.6rem auto;
+}
+
+.footer__social {
+  padding: 0.8rem;
+}
+
+.footer__social .footer__link {
+  font-size: 1.675rem;
+  margin: 0 0.3rem;
+}
+
+.footer__item {
+  margin: 1rem auto 1.3rem;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+  cursor: pointer;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  background-color: #fff;
+  width: 0;
+  bottom: 10px;
+  height: 1px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer__link:hover::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 1px;
 }
 
 body {
